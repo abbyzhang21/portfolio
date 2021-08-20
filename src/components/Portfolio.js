@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import gitImg from "../assets/img/svg/social/github.svg";
 import linkImg from "../assets/img/svg/social/link.svg";
+import positiveBg from "../assets/img/background/positive.png";
 
 const ProjectCategory = ({ categories, projectCategories }) =>
   projectCategories.map((c) => {
@@ -26,7 +27,9 @@ const Portfolio = ({ categories, projects }) => {
   };
   return (
     <section className="aztm_portoflio" id="portfolio">
-      <div className="container">
+      <img src={positiveBg} />
+
+      <div className="container" style={{ marginTop: "150px" }}>
         <div className="aztm_main_title">
           <div className="title">
             <h3>
@@ -39,7 +42,11 @@ const Portfolio = ({ categories, projects }) => {
                 categories.length &&
                 categories.map((c) => (
                   <li className={isNavActive ? "opened" : ""} key={c.id}>
-                    <a onClick={() => filterCategory(c.id)} className="current" data-filter="*">
+                    <a
+                      onClick={() => filterCategory(c.id)}
+                      className="current"
+                      data-filter="*"
+                    >
                       <span className="first">{c.title}</span>
                       <span className="second">{c.title}</span>
                     </a>
@@ -69,12 +76,20 @@ const Portfolio = ({ categories, projects }) => {
                           <div className="links-content">
                             {!!p.code && (
                               <a href={p.code} target="_blank" rel="noreferrer">
-                                <img src={gitImg} alt="github" className="link-img" />
+                                <img
+                                  src={gitImg}
+                                  alt="github"
+                                  className="link-img"
+                                />
                               </a>
                             )}
                             {!!p.url && (
                               <a href={p.url} target="_blank" rel="noreferrer">
-                                <img src={linkImg} alt="link" className="link-img" />
+                                <img
+                                  src={linkImg}
+                                  alt="link"
+                                  className="link-img"
+                                />
                               </a>
                             )}
                           </div>
@@ -86,7 +101,10 @@ const Portfolio = ({ categories, projects }) => {
                         <a href="#">{p.title}</a>
                       </h3>
                       <span>
-                        <ProjectCategory categories={categories} projectCategories={p.categories} />
+                        <ProjectCategory
+                          categories={categories}
+                          projectCategories={p.categories}
+                        />
                       </span>
                     </div>
                   </div>

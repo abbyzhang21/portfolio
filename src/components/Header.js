@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import { Download } from "react-feather";
 import menuImg from "../assets/img/icons/menu.svg";
 import closeImg from "../assets/img/icons/close.svg";
+import myIcon from "../assets/img/icons/my-icon.png";
 
 const Header = ({ resume }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -23,7 +24,9 @@ const Header = ({ resume }) => {
 
   return (
     <>
-      <div className={`aztm_topbar opened ${scrollPosition > 50 ? "animate" : ""}`}>
+      <div
+        className={`aztm_topbar opened ${scrollPosition > 50 ? "animate" : ""}`}
+      >
         <div className="container">
           <div className="topbar_inner">
             <div className="menu">
@@ -36,8 +39,11 @@ const Header = ({ resume }) => {
                       to="home"
                       spy={true}
                       smooth={true}
-                      duration={500}>
-                      <span className="first">Home</span>
+                      duration={500}
+                    >
+                      <span className="first">
+                        <img src={myIcon} style={{ width: "35px" }} />
+                      </span>
                       <span className="second">Home</span>
                     </Link>
                   </li>
@@ -48,7 +54,8 @@ const Header = ({ resume }) => {
                       to="about"
                       spy={true}
                       smooth={true}
-                      duration={500}>
+                      duration={500}
+                    >
                       <span className="first">About</span>
                       <span className="second">About</span>
                     </Link>
@@ -60,7 +67,8 @@ const Header = ({ resume }) => {
                       to="portfolio"
                       spy={true}
                       smooth={true}
-                      duration={500}>
+                      duration={500}
+                    >
                       <span className="first">Portfolio</span>
                       <span className="second">Portfolio</span>
                     </Link>
@@ -72,7 +80,8 @@ const Header = ({ resume }) => {
                       to="contact"
                       spy={true}
                       smooth={true}
-                      duration={500}>
+                      duration={500}
+                    >
                       <span className="first">Contact</span>
                       <span className="second">Contact</span>
                     </Link>
@@ -99,7 +108,11 @@ const Header = ({ resume }) => {
               </>
             ) : (
               <>
-                <img src={menuImg} alt="" onClick={() => setOpenMenu(!openMenu)} />
+                <img
+                  src={menuImg}
+                  alt=""
+                  onClick={() => setOpenMenu(!openMenu)}
+                />
                 <span className="menu-txt">MENU</span>
               </>
             )}
@@ -118,7 +131,10 @@ const Header = ({ resume }) => {
               </div>
             </div> */}
         </div>
-        <div className="dropdown" style={{ display: openMenu ? "block" : "none" }}>
+        <div
+          className="dropdown"
+          style={{ display: openMenu ? "block" : "none" }}
+        >
           <div className="container">
             <div className="dropdown_inner">
               <ul className="anchor_nav">
@@ -129,7 +145,8 @@ const Header = ({ resume }) => {
                     to="home"
                     spy={true}
                     smooth={true}
-                    duration={500}>
+                    duration={500}
+                  >
                     Home
                   </Link>
                 </li>
@@ -140,7 +157,8 @@ const Header = ({ resume }) => {
                     to="about"
                     spy={true}
                     smooth={true}
-                    duration={500}>
+                    duration={500}
+                  >
                     About
                   </Link>
                 </li>
@@ -151,7 +169,8 @@ const Header = ({ resume }) => {
                     to="portfolio"
                     spy={true}
                     smooth={true}
-                    duration={500}>
+                    duration={500}
+                  >
                     Portfolio
                   </Link>
                 </li>
@@ -162,7 +181,8 @@ const Header = ({ resume }) => {
                     to="contact"
                     spy={true}
                     smooth={true}
-                    duration={500}>
+                    duration={500}
+                  >
                     Contact
                   </Link>
                 </li>
