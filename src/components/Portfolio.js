@@ -6,7 +6,7 @@ import positiveBg from "../assets/img/background/positive.png";
 const ProjectCategory = ({ categories, projectCategories }) =>
   projectCategories.map((c) => {
     return (
-      <a href="#" key={c} className="technology">
+      <a href={c.url} key={c} className="technology">
         {categories[c].c}
       </a>
     );
@@ -42,14 +42,14 @@ const Portfolio = ({ categories, projects }) => {
                 categories.length &&
                 categories.map((c) => (
                   <li className={isNavActive ? "opened" : ""} key={c.id}>
-                    <a
+                    <span
                       onClick={() => filterCategory(c.id)}
                       className="current"
                       data-filter="*"
                     >
                       <span className="first">{c.title}</span>
                       <span className="second">{c.title}</span>
-                    </a>
+                    </span>
                   </li>
                 ))}
             </ul>
@@ -98,7 +98,7 @@ const Portfolio = ({ categories, projects }) => {
                     </div>
                     <div className="title">
                       <h3>
-                        <a href="#">{p.title}</a>
+                        <a href={p.url}>{p.title}</a>
                       </h3>
                       <span>
                         <ProjectCategory

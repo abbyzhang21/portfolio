@@ -1,6 +1,6 @@
 import React from "react";
 // import gitImg from "../assets/img/svg/social/git-square.png";
-import linkedinImg from "../assets/img/svg/social/linkedin-square.png";
+// import linkedinImg from "../assets/img/svg/social/linkedin-square.png";
 import aboutPic from "../assets/img/about/full-stack-developer.svg";
 import reactImg from "../assets/img/technologies/react.png";
 import jsImg from "../assets/img/technologies/js.png";
