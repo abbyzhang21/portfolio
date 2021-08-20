@@ -33,21 +33,21 @@ const Header = ({ resume }) => {
                 <ul className="anchor_nav">
                   <li>
                     <Link
-                      activeClass="active"
+                      // activeClass="active"
                       className="home"
                       to="home"
-                      spy={true}
-                      smooth={true}
-                      duration={500}
+                      // spy={true}
+                      // smooth={true}
+                      // duration={500}
                     >
-                      <span className="first">
+                      {/* <span className="first"></span> */}
+                      <span>
                         <img
                           src={myIcon}
                           style={{ width: "35px" }}
                           alt="logo"
                         />
                       </span>
-                      <span className="second">Home</span>
                     </Link>
                   </li>
                   <li>

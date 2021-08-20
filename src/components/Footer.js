@@ -9,15 +9,14 @@ const Contact = () => {
           <span>
             Interested in working together? We should chat over a <Coffee />{" "}
           </span>
-          <button className="connect-btn">
-            <a
-              href="mailto:abbyzhang21@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Let's do it
-            </a>
-          </button>
+          <a
+            href="mailto:abbyzhang21@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className="connect-btn"
+          >
+            <span>Let's do it</span>
+          </a>
         </div>
         <div className="copyright_inner">
           <ul>

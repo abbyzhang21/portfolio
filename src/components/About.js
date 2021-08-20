@@ -29,8 +29,8 @@ const About = () => {
             </div>
             <div className="text">
               <p>
-                My name is Abby Zhang. I&apos;m a Web Developer, and I&apos;m
-                very passionate and dedicated to my work.
+                My name is Abby Zhang. I&apos;m a full stack Developer, and
+                I&apos;m very passionate and dedicated to my work.
               </p>
               {/* <p>
                 With 9 years experience as a professional Web developer, I have

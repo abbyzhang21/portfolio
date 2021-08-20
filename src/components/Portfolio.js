@@ -110,6 +110,9 @@ const Portfolio = ({ categories, projects }) => {
                   </div>
                 </li>
               ))}
+            <li className="list_inner mt-5">
+              <h3>UPDATING ...</h3>
+            </li>
           </ul>
         </div>
       </div>
