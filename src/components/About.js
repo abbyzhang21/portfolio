@@ -1,22 +1,20 @@
 import React from "react";
-import gitImg from "../assets/img/svg/social/git-square.png";
+// import gitImg from "../assets/img/svg/social/git-square.png";
 import linkedinImg from "../assets/img/svg/social/linkedin-square.png";
 import aboutPic from "../assets/img/about/full-stack-developer.svg";
 import reactImg from "../assets/img/technologies/react.png";
-import vueImg from "../assets/img/technologies/vue.png";
 import jsImg from "../assets/img/technologies/js.png";
 import jqueryImg from "../assets/img/technologies/jquery.png";
 import htmlImg from "../assets/img/technologies/html-5.png";
 import cssImg from "../assets/img/technologies/css3.png";
 import wpImg from "../assets/img/technologies/wordpress.png";
 import laravelImg from "../assets/img/technologies/laravel.png";
-import positiveBg from "../assets/img/background/positive.png";
 import negativeBg from "../assets/img/background/negative.png";
 
 const About = () => {
   return (
     <section className="aztm_about" id="about">
-      <img src={negativeBg} />
+      <img src={negativeBg} alt="bg" />
       <div className="container">
         <div className="about_inner">
           <div className="left">

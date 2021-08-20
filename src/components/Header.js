@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-//import MotionIcon from "./MotionIcon";
 import { Download } from "react-feather";
 import menuImg from "../assets/img/icons/menu.svg";
 import closeImg from "../assets/img/icons/close.svg";
@@ -42,7 +41,11 @@ const Header = ({ resume }) => {
                       duration={500}
                     >
                       <span className="first">
-                        <img src={myIcon} style={{ width: "35px" }} />
+                        <img
+                          src={myIcon}
+                          style={{ width: "35px" }}
+                          alt="logo"
+                        />
                       </span>
                       <span className="second">Home</span>
                     </Link>

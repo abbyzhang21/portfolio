@@ -27,7 +27,7 @@ const Portfolio = ({ categories, projects }) => {
   };
   return (
     <section className="aztm_portoflio" id="portfolio">
-      <img src={positiveBg} />
+      <img src={positiveBg} alt="bg" />
 
       <div className="container" style={{ marginTop: "150px" }}>
         <div className="aztm_main_title">

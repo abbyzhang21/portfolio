@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  MapPin,
-  Mail,
-  Phone,
-  Heart,
-  Coffee,
-  Linkedin,
-  Facebook,
-  Instagram,
-} from "react-feather";
+import { Mail, Heart, Coffee, Linkedin, Instagram } from "react-feather";
 
 const Contact = () => {
   return (
@@ -19,7 +10,11 @@ const Contact = () => {
             Interested in working together? We should chat over a <Coffee />{" "}
           </span>
           <button className="connect-btn">
-            <a href="mailto:abbyzhang21@gmail.com" target="_blank">
+            <a
+              href="mailto:abbyzhang21@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               Let's do it
             </a>
           </button>
@@ -38,12 +33,20 @@ const Contact = () => {
               <span>You can find me here</span>
               <ul className="social">
                 <li>
-                  <a href="mailto:abbyzhang21@gmail.com" target="_blank">
+                  <a
+                    href="mailto:abbyzhang21@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Mail />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/abbyzh/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/abbyzh/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Linkedin />
                   </a>
                 </li>
@@ -51,6 +54,7 @@ const Contact = () => {
                   <a
                     href="https://www.instagram.com/abbyq.zhang/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <Instagram />
                   </a>
