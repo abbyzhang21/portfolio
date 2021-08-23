@@ -80,7 +80,6 @@ const About = () => {
                   <img src={laravelImg} alt="Laravel" />
                 </a>
               </div>
-              {/* <p>Let&apos;s connect with me on:</p> */}
             </div>
             {/* <div className="social-connect">
               <a
