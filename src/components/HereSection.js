@@ -77,9 +77,9 @@ const HereSection = ({ slides }) => {
               <h3>
                 I
                 <span
-                  class="txt-rotate"
+                  className="txt-rotate"
                   data-period="1000"
-                  data-rotate='[ "am Abby.","am a Full Stack Developer.", "am a veteran.", "curious.","love what I do."]'
+                  data-rotate='[ "am Abby.","write code.", "am a veteran.", "am curious.","love what I do."]'
                   style={{ paddingLeft: "5px" }}
                 ></span>
               </h3>

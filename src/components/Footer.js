@@ -1,5 +1,6 @@
 import React from "react";
 import { Mail, Heart, Coffee, Linkedin, Instagram } from "react-feather";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -9,14 +10,16 @@ const Contact = () => {
           <span>
             Interested in working together? We should chat over a <Coffee />{" "}
           </span>
-          <a
+          {/* <a
             href="mailto:abbyzhang21@gmail.com"
             target="_blank"
             rel="noreferrer"
             className="connect-btn"
-          >
+          > */}
+          <Link to="/collaboration" className="connect-btn">
             <span>Let's do it</span>
-          </a>
+          </Link>
+          {/* </a> */}
         </div>
         <div className="copyright_inner">
           <ul>

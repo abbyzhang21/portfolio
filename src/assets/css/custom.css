@@ -529,7 +529,7 @@ body {
   padding-top: 10px;
 }
 
-.aztm_about .right .text {
+.aztm_aboutaztm_about .right .text {
   width: 100%;
   float: left;
   margin-bottom: 5px;
@@ -856,7 +856,9 @@ body {
   width: 100%;
   left: 0;
 }
-
+.aztm_portoflio .image .portfolio-img {
+  height: 220px;
+}
 .project-desc > .links-content {
   text-align: center;
 }
@@ -926,9 +928,9 @@ body {
 .aztm_portoflio .portfolio_inner ul li .list_inner .image .project-img {
   min-width: 100%;
   border: 2px solid var(--themeBg);
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 10px;
-  min-height: 220px;
+  height: 220px;
 }
 
 .aztm_portoflio .portfolio_inner ul li .list_inner .image .main {
@@ -1602,9 +1604,10 @@ body {
   .aztm_hero {
     margin-top: 80px;
   }
-  /* .aztm_hero .title h2 {
-    font-size: 60px;
-  } */
+
+  .aztm_about .bg-img {
+    margin-top: -18px;
+  }
   .aztm_hero .name {
     width: 100%;
     max-width: 500px;

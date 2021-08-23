@@ -92,12 +92,12 @@ const Header = ({ resume }) => {
                 </ul>
               </div>
             </div>
-            <div className="aztm_resume" data-position="center">
+            {/* <div className="aztm_resume" data-position="center">
               <a href={resume} download>
                 <span>Resume</span>
                 <Download />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

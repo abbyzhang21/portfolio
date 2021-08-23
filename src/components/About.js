@@ -14,7 +14,7 @@ import negativeBg from "../assets/img/background/negative.png";
 const About = () => {
   return (
     <section className="aztm_about" id="about">
-      <img src={negativeBg} alt="bg" />
+      <img src={negativeBg} alt="bg" className="bg-img" />
       <div className="container">
         <div className="about_inner">
           <div className="left">
@@ -23,14 +23,15 @@ const About = () => {
           <div className="right">
             <div className="name">
               <h3>
-                Abby Zhang<span className="bg">About</span>
+                Me<span className="bg">About</span>
               </h3>
               <span>Creative Web &amp; App Developer</span>
             </div>
             <div className="text">
               <p>
-                My name is Abby Zhang. I&apos;m a full stack Developer, and
-                I&apos;m very passionate and dedicated to my work.
+                Hi, I'm Abby, a software engineer based in the Bay area;
+                Passionate about building beautiful applications with excellent
+                user experiences.
               </p>
               {/* <p>
                 With 9 years experience as a professional Web developer, I have
